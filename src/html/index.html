@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Dashboard using html,css,js" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="box flex-1">
+          <div class="logo">
+            <img src="/assets/imgs/logo.jpg" alt="logo" class="logo-img" />
+          </div>
+
+          <div class="box megamenus">
+            <div class="search-icon">
+              <div class="circle center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <div class="dropDown">
+              Mega Menu<i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropDown">
+              Settings<i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropDown">
+              Projects<i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="quick-settings-box">
+              <div class="circle center">
+                <i class="fa-solid fa-mountain-sun"></i>
+              </div>
+              <div class="circle center"></div>
+              <div class="circle center"></div>
+              <div class="circle center"></div>
+            </div>
+            <div class="profile-box">
+              <img
+                class="circle"
+                src="../../assets/imgs/person.png"
+                alt="person"
+              />
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+              <div class="profile-info">
+                <div class="profile-name">John Doe</div>
+                <div class="profile-desc">Software Engineer</div>
+              </div>
+            </div>
+            <div class="menu-2">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <aside>
+        <div class="menu-item">
+          <div class="menu-title">Menu</div>
+          <div class="dashboards">
+            <div class="title dashboards-toggle">
+              <i class="fa-brands fa-space-awesome"></i> Dashboards<i
+                class="fa-solid fa-chevron-down"
+              ></i>
+            </div>
+            <div class="menu-item-list hide" id="dashboards">
+              <ul>
+                <li>Analysis</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <div class="minimal opened">
+                  <span class="minimal-toggle">Minimal</span
+                  ><i class="fa-solid fa-chevron-down"></i>
+                  <div class="menu-item-list hide" id="minimal">
+                    <ul>
+                      <li>Variation 1</li>
+                      <li>Variation 2</li>
+                    </ul>
+                  </div>
+                </div>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pages">
+            <div class="title"><i class="fa-solid fa-pager"></i> Pages</div>
+          </div>
+          <div class="apps">
+            <div class="title">
+              <i class="fa-solid fa-box"></i> Applications
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-title">UI Components</div>
+          <div class="elements">
+            <div class="title"><i class="fa-solid fa-car"></i> Elements</div>
+          </div>
+          <div class="components">
+            <div class="title">
+              <i class="fa-regular fa-gem"></i> Components
+            </div>
+          </div>
+          <div class="tables">
+            <div class="title"><i class="fa-solid fa-table"></i> Tables</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-title">Dashboard Widgets</div>
+          <div class="title">
+            <i class="fa-solid fa-chart-pie"></i> Chart Box
+          </div>
+          <div class="title">
+            <i class="fa-solid fa-chart-pie"></i> Chart Box
+          </div>
+          <div class="title">
+            <i class="fa-solid fa-chart-pie"></i> Chart Box
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-title">Forms</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-title">Charts</div>
+        </div>
+      </aside>
+      <main>
+        <div class="row">
+          <h3><i class="fa-solid fa-building"></i> Minimal Dashboard</h3>
+          <div class="dropdown">
+            <div class="dropbtn center">
+              Select Period <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">2019-2020</a>
+              <a href="#">2020-2021</a>
+              <a href="#">2021-2022</a>
+            </div>
+          </div>
+        </div>
+        <div class="row alert">
+          <span
+            ><i class="fa-regular fa-circle-question"></i> This Dashboard was
+            created by Malek Mostafa using HTML,CSS,JS Only. No frameworks or
+            libraries were used Except Chartjs.</span
+          >
+        </div>
+        <div class="row"></div>
+        <div class="statistics-1">
+          <div class="box-content">
+            <div class="title">New Accounts</div>
+            <div class="main-content">
+              <span class="number"
+                ><i class="fa-solid fa-arrow-up" style="color: lightgreen"></i>
+                234%</span
+              >
+              <span class="chart">
+                <div class="progress-bar">
+                  <progress
+                    value="75"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  ></progress>
+                  58
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="box-content">
+            <div class="title">Total Expenses</div>
+            <div class="main-content">
+              <span class="number"
+                ><i class="fa-solid fa-arrow-down" style="color: red"></i>
+                71%</span
+              ><span class="chart">
+                <div class="progress-bar">
+                  <progress
+                    value="75"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  ></progress>
+                  62
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="box-content">
+            <div class="title">Company Value</div>
+            <div class="main-content">
+              <span class="number"
+                ><i
+                  class="fa-solid fa-dollar-sign"
+                  style="color: rgba(128, 128, 128, 0.605)"
+                ></i>
+                1.45M</span
+              ><span class="chart">
+                <div class="progress-bar">
+                  <progress
+                    value="75"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  ></progress>
+                  72
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="box-content">
+            <div class="title">New Employees</div>
+            <div class="main-content">
+              <span class="number"
+                ><i class="fa-solid fa-plus" style="color: #50ed16"></i> 34
+                Hires</span
+              ><span class="chart">
+                <div class="progress-bar">
+                  <progress
+                    value="75"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  ></progress>
+                  81
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="acquisitions" >
+              <canvas id="myBarChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">b1</div>
+          <div class="box">b2</div>
+          <div class="box">b3</div>
+          <div class="box">b4</div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/js/index.js"></script>
+    <script type="module" src="/src/js/acquisitions.js"></script>
+  </body>
+</html>
