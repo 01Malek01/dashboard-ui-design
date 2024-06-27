@@ -1,0 +1,2 @@
+const e=document.querySelector(".dropbtn"),t=document.querySelector(".dropdown-content"),n=document.getElementById("dashboards"),o=document.getElementById("minimal"),c=document.querySelector(".dashboards-toggle"),d=document.querySelector(".minimal-toggle");e.addEventListener("click",function(){t.classList.toggle("show")}),c.addEventListener("click",function(){n.classList.toggle("hide")}),d.addEventListener("click",function(){o.classList.toggle("hide")}),console.log(o.parentElement);
+//# sourceMappingURL=index.a4c58ff1.js.map
